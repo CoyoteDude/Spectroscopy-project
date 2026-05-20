@@ -1,0 +1,75 @@
+# Spectroscopy-project .gitignore
+# Tailored for radiation detection experiments, data files, and scientific workflows
+
+# Operating System
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files (large or binary spectrometer exports)
+*.bin
+*.spx
+*.csv
+*.xlsx
+*.json
+*.h5
+*.hdf5
+
+# Keep directory structure but ignore raw data content
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Radiacode / spectrometer specific (adjust as needed)
+# Add any proprietary export formats here if they are large
+
+# Environment variables / secrets
+.env
+.env.local
+*.pem
+
+# OS generated
+Desktop.ini
